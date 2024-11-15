@@ -15,7 +15,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Amsler Grid" component={AmslerGridScreen} />
-        <Tab.Screen name="Kansal Eye" component={ClinicInfoScreen} />
+        <Tab.Screen name="Kansal Eye Clinic Info" component={ClinicInfoScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );

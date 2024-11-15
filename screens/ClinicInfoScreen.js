@@ -4,9 +4,8 @@ import { View, Text, StyleSheet, Linking, TouchableOpacity, Image } from 'react-
 export default function ClinicInfoScreen() {
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => Linking.openURL('mailto:receptionist.kansaleye@gmail.com')}>
-        <Text style={styles.email}>https://www.optassociates.com</Text>
-      </TouchableOpacity>
+      <Text style={styles.spacer}></Text>
+      <Text style={styles.info}>Dr. Rishav Kansal</Text>
       <Text style={styles.info}>770 N. Coit Road Suite 2486</Text>
       <Text style={styles.info}>Richardson, Tx 75080</Text>
       <Text style={styles.info}>Phone: 972-690-1922</Text>
@@ -14,7 +13,7 @@ export default function ClinicInfoScreen() {
       
       <Text style={styles.body}>To schedule an appointment, please call the office phone number, or you can contact Kansal Eye at: </Text>
       <TouchableOpacity onPress={() => Linking.openURL('mailto:receptionist.kansaleye@gmail.com')}>
-        <Text style={styles.email}>receptionist.kansaleye@gmail.com</Text>
+        <Text style={styles.email}>receptionist@optassociates.com</Text>
       </TouchableOpacity>
 
       
@@ -32,7 +31,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#fff'
   },
   header: {
     fontSize: 24,
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
   },
   info: {
     fontSize: 16,
-    marginVertical: 5,
+    marginVertical: 1,
   },
   email: {
     fontSize: 16,
@@ -59,6 +58,9 @@ const styles = StyleSheet.create({
   body: {
     fontSize: 16,
     marginVertical: 5,
-    padding: 16
+    padding: 16,
   },
+  spacer: {
+    paddingTop: 40
+  }
 });
